@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pixolith/vue-css-modules.git"
+        "url": "git@github.com:pixolith/vue-packages.git"
     },
     "sideEffects": false,
     "files": [
@@ -20,7 +20,7 @@
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pixolith/vue-css-modules/issues"
+        "url": "https://github.com/pixolith/vue-packages/issues"
     },
     "peerDependencies": {
         "vue": "^2.5.22"
@@ -92,7 +92,7 @@
             ]
         ]
     },
-    "homepage": "https://github.com/pixolith/vue-css-modules#readme",
+    "homepage": "https://github.com/pixolith/vue-packages/tree/master/packages/vue-css-modules",
     "description": "Write classes as you're used to be an get unique classnames as output",
     "gitHead": "4b5178036b818a7b9fead632d032af9300359abe"
 }
