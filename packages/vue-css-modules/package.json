@@ -1,6 +1,6 @@
 {
     "name": "@pixolith/vue-css-modules",
-    "version": "1.1.5",
+    "version": "1.1.4",
     "main": "dist/vue-css-modules.js",
     "umd:main": "dist/vue-css-modules.umd.js",
     "module": "dist/vue-css-modules.module.js",
