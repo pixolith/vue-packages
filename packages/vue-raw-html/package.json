@@ -95,5 +95,6 @@
         ]
     },
     "homepage": "https://github.com/pixolith/vue-raw-html#readme",
-    "description": "Render given String as raw html"
+    "description": "Render given String as raw html",
+    "gitHead": "4b5178036b818a7b9fead632d032af9300359abe"
 }

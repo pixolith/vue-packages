@@ -93,5 +93,6 @@
         ]
     },
     "homepage": "https://github.com/pixolith/vue-css-modules#readme",
-    "description": "Write classes as you're used to be an get unique classnames as output"
+    "description": "Write classes as you're used to be an get unique classnames as output",
+    "gitHead": "4b5178036b818a7b9fead632d032af9300359abe"
 }
