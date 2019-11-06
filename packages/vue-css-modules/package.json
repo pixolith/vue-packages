@@ -1,0 +1,97 @@
+{
+    "name": "@pixolith/vue-css-modules",
+    "version": "1.0.9",
+    "main": "dist/vue-css-modules.js",
+    "umd:main": "dist/vue-css-modules.umd.js",
+    "module": "dist/vue-css-modules.module.js",
+    "scripts": {
+        "build": "rollup -c",
+        "prepublishOnly": "npm run build && npm run tests",
+        "tests": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pixolith/vue-css-modules.git"
+    },
+    "sideEffects": false,
+    "files": [
+        "dist/"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pixolith/vue-css-modules/issues"
+    },
+    "peerDependencies": {
+        "vue": "^2.5.22"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/plugin-transform-runtime": "^7.6.2",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/runtime-corejs3": "^7.6.3",
+        "@vue/server-test-utils": "^1.0.0-beta.29",
+        "@vue/test-utils": "^1.0.0-beta.29",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-eslint": "^10.0.3",
+        "babel-jest": "^24.9.0",
+        "core-js": "^3.3.5",
+        "eslint": "^6.6.0",
+        "eslint-config-prettier": "^6.5.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-vue": "^5.2.3",
+        "jest": "^24.9.0",
+        "jest-extended": "^0.11.2",
+        "jest-serializer-vue": "^2.0.2",
+        "jest-transform-stub": "^2.0.0",
+        "node-sass": "^4.13.0",
+        "rollup": "^1.12.0",
+        "rollup-plugin-node-resolve": "^5.0.0",
+        "rollup-plugin-replace": "^2.2.0",
+        "rollup-plugin-terser": "^4.0.4",
+        "vue": "^2.5.22",
+        "vue-jest": "^3.0.5",
+        "vue-server-renderer": "^2.6.10",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "vue"
+        ],
+        "watchman": false,
+        "moduleNameMapper": {
+            "^~/(.*)$": "<rootDir>/$1",
+            "^~~/(.*)$": "<rootDir>/$1"
+        },
+        "transform": {
+            "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+            ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+        },
+        "snapshotSerializers": [
+            "<rootDir>/node_modules/jest-serializer-vue"
+        ],
+        "collectCoverage": false,
+        "collectCoverageFrom": [
+            "<rootDir>/src/**/*.vue"
+        ],
+        "setupFilesAfterEnv": [
+            "jest-extended"
+        ]
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ]
+        ]
+    },
+    "homepage": "https://github.com/pixolith/vue-css-modules#readme",
+    "description": "Write classes as you're used to be an get unique classnames as output"
+}
