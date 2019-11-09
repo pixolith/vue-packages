@@ -75,7 +75,7 @@ import { directive as vueRawHTML } from '@pixolith/vue-raw-html/dist/vue-raw-htm
 Vue.directive('raw-html', vueRawHTML);
 ```
 
-this gives you access to `v-raw-html="logo.svg"` renderering the contents of `logo.svg` directly into the html. Please be aware that you need to escape your unsafe input stay safe from XSS injections.
+this gives you access to `v-raw-html="require('./logo.svg')"` renderering the contents of `logo.svg` directly into the html. Please be aware that you need to escape your unsafe input stay safe from XSS injections.
 
 ```html
 <template>
