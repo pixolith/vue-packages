@@ -33,7 +33,7 @@ npm install @pixolith/vue-raw-html
 
 **Raw Loader** (<https://webpack.js.org/loaders/raw-loader/)> is required to inject a raw string when requiring a file of a given type. This allows webpack to handle the filetype and pass the string to this plugin.
 
-When using **Nuxt** this needs to be added to the `nuxt.config.js`.
+When using **Nuxt** this needs to be added to the `nuxt.config.js`. This example is for loading .svg file types but any external file that contains parseable html can be loaded.
 
 ```javascript
     extend(config, ctx) {
