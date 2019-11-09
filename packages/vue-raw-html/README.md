@@ -27,6 +27,11 @@ npm install @pixolith/vue-raw-html
 
 ```html
 <script src="https://unpkg.com/@pixolith/vue-raw-html/dist/vue-raw-html.umd.js">
+
+## Todos
+* Allow inline strings and remove the need to external files.
+
+
 ```
 
 ## Requirements
