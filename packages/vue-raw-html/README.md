@@ -30,14 +30,11 @@ npm install @pixolith/vue-raw-html
 
 ```
 
-## Todos
-* Allow inline strings and remove the need to external files.
-
 ## Requirements
 
 **Raw Loader** (<https://webpack.js.org/loaders/raw-loader/)> is required to inject a raw string when requiring a file of a given type. This allows webpack to handle the filetype and pass the string to this plugin.
 
-When using **Nuxt** this needs to be added to the `nuxt.config.js`. This example is for loading .svg file types but any external file that contains parseable html can be loaded.
+When using **Nuxt** this needs to be added to the `nuxt.config.js`. This example is for loading .svg file types but any external file that contains parseable html or inline html can be loaded.
 
 ```javascript
     extend(config, ctx) {
@@ -82,7 +79,7 @@ this gives you access to `v-raw-html="logo.svg"` renderering the contents of `lo
 
 ```html
 <template>
-    <div v-raw-html="logo.svg" class="my-class" />
+    <div v-raw-html="require('./logo.svg')" class="my-class" />
 </template>
 
 <style lang="scss" scoped>
