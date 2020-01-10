@@ -135,7 +135,7 @@ In order to render the directive in node.js on the server you need to pass custo
 See: <https://ssr.vuejs.org/api/#directives>
 
 ```javascript
-import VueCSSModules from '@pixolith/vue-raw-html';
+import VueRawHTML from '@pixolith/vue-raw-html';
 
 const renderer = createRenderer({
     directives: {
