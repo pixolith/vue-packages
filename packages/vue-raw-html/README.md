@@ -139,7 +139,7 @@ import VueRawHTML from '@pixolith/vue-raw-html';
 
 const renderer = createRenderer({
     directives: {
-        cssm: VueCSSModules.ssrDirective,
+        cat: VueRawHTML.ssrDirective,
     },
 });
 ```
@@ -155,7 +155,7 @@ import VueRawHTML from '@pixolith/vue-raw-html';
 
 bundleRenderer: {
     directives: {
-        cssm: VueRawHTML.ssrDirective,
+        cat: VueRawHTML.ssrDirective,
     }
 }
 ```
