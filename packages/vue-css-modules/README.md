@@ -144,7 +144,7 @@ There are two ways to define global css:
 
 For mixins, colors and anything that is used in preprocessing i'd recommend the style-ressource-loader (<https://www.npmjs.com/package/style-resources-loader)>
 
-### As mixin
+### As a mixin
 
 ```javascript
 import Vue from 'vue';
