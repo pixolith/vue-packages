@@ -32,7 +32,7 @@ const builds = {
 };
 
 function getAllBuilds() {
-    return Object.keys(builds).map(key => genConfig(builds[key]));
+    return Object.keys(builds).map((key) => genConfig(builds[key]));
 }
 
 function genConfig({ outFile, format, mode }) {
@@ -46,13 +46,15 @@ function genConfig({ outFile, format, mode }) {
                 vue: 'Vue',
             },
             exports: 'named',
-            name: format === 'umd' ? 'vueCSSModules' : undefined,
+            name: format === 'umd' ? 'vueRawHtml' : undefined,
         },
         external: ['vue'],
         plugins: [
             resolve(),
             replace({
-                'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
+                'process.env.NODE_ENV': JSON.stringify(
+                    isProd ? 'production' : 'development',
+                ),
             }),
             isProd && terser(),
         ].filter(Boolean),

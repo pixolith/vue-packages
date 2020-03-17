@@ -10,12 +10,12 @@ const renderRaw = (element, binding, vnode) => {
     let rawHTML = binding.value;
     rawHTML = rawHTML.default ? rawHTML.default : rawHTML;
 
-    rawHTML = propagateScope(rawHTML, element);
+    rawHTML = propagateScopeClient(rawHTML, element);
 
     element.innerHTML = rawHTML;
 };
 
-const propagateScope = (rawHTML, element) => {
+const propagateScopeClient = (rawHTML, element) => {
     let regex = new RegExp(/<\w+ /g),
         res = rawHTML.match(regex);
 
@@ -25,7 +25,7 @@ const propagateScope = (rawHTML, element) => {
             `${match}${Object.keys(element.dataset)
                 // see https://developer.mozilla.org/de/docs/Web/API/HTMLElement/dataset Name conversion..
                 .map((dataset) => 'data-' + dataset.replace(/([A-Z])/g, '-$1'))
-                .filter(dataset => dataset.includes('data-v-'))
+                .filter((dataset) => dataset.includes('data-v-'))
                 .join(' ')} `,
         );
     });
