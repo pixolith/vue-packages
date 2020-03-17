@@ -21,6 +21,8 @@ export default (el, directive) => {
         return;
     }
 
+    let rawHTML = '';
+
     let vueAttrs =
         el.data.attrs &&
         Object.keys(el.data.attrs)
@@ -31,7 +33,7 @@ export default (el, directive) => {
             }, {});
 
     if (vueAttrs) {
-        let rawHTML = directive.value.default
+        rawHTML = directive.value.default
             ? directive.value.default
             : directive.value;
 
