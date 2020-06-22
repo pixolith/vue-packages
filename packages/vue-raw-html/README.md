@@ -152,9 +152,11 @@ When using _nuxt_ this can be added to `nuxt.config.js`. See Nuxt.js docs: <http
 ```javascript
 import VueRawHTML from '@pixolith/vue-raw-html';
 
-bundleRenderer: {
-    directives: {
-        'raw-html': VueRawHTML.ssrDirective,
+render: {
+    bundleRenderer: {
+        directives: {
+            'raw-html': VueRawHTML.ssrDirective,
+        }
     }
 }
 ```
